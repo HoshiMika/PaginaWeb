@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif; /* Fuente principal */
-    background-image: url('imagenes/Imagen Pagina Web.jpg'); /* Imagen de fondo */
+    background-image: url('imagenes/Imagen\ Pagina\ Web.jpg'); /* Imagen de fondo */
     background-repeat: no-repeat; /* No repite la imagen */
     background-position: center center; /* Centra la imagen */
     background-size: cover; /* Cubre toda la pantalla */
