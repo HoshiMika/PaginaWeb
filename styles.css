@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif; /* Fuente principal */
+    background-image: url('imagenes/Imagen Pagina Web.jpg'); /* Imagen de fondo */
+    background-repeat: no-repeat; /* No repite la imagen */
+    background-position: center center; /* Centra la imagen */
+    background-size: cover; /* Cubre toda la pantalla */
+    background-attachment: fixed; /* Fija la imagen al viewport */
+    margin: 0;
+    padding: 0;
+    color: #fff; /* Texto blanco */
+    min-height: 100vh;
+}
+
+header {
+    text-align: center; /* Centra el encabezado */
+    margin-top: 40px; /* Espacio superior */
+}
+
+h1 {
+    font-size: 2.5rem; /* Título grande */
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 8px #000; /* Sombra para mejor legibilidad */
+}
+
+.navigation {
+    margin-top: 20px;
+}
+
+.navigation ul {
+    background: rgba(0,0,0,0.7); /* Fondo oscuro semitransparente */
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+    list-style-type: none; /* Quita los puntos de la lista principal */
+    color: #fff;
+    font-size: 1.1rem;
+    display: inline-block;
+    text-align: left;
+}
+
+.navigation ul ul {
+    background: none; /* Sublistas sin fondo extra */
+    padding-left: 20px; /* Sangría para sublistas */
+    margin-top: 8px;
+    list-style-type: disc; /* Puntos para sublistas */
+    color: #fff;
+}
+
+.navigation li {
+    margin-bottom: 18px; /* Espacio entre opciones */
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.navigation a:hover {
+    color: #5cb85c; /* Verde al pasar el mouse */
+}
+
+label[for="toggle"] {
+    display: none; /* Oculta el botón de menú en escritorio */
+}
+
+@media (max-width: 700px) {
+    header {
+        margin-top: 10px;
+    }
+    .navigation ul {
+        padding: 10px 5px;
+        font-size: 1rem;
+    }
+    label[for="toggle"] {
+        display: block;
+        background: #5cb85c;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 8px;
+        margin: 10px auto;
+        cursor: pointer;
+        font-weight: bold;
+        width: fit-content;
+    }
+    .navigation ul {
+        display: none;
+    }
+    #toggle:checked + label + nav .navigation ul {
+        display: block;
+    }
+}
+
+.here {
+    min

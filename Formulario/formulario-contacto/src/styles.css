@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;                /* Fuente principal para todo el documento */
+    background-image: url('../../imagenes/Imagen Pagina Web.jpg'); /* Imagen de fondo de la página */
+    background-repeat: no-repeat;                  /* Evita que la imagen de fondo se repita */
+    background-position: center center;            /* Centra la imagen de fondo */
+    background-size: cover;                        /* Hace que la imagen cubra todo el fondo */
+    background-attachment: fixed;                  /* Fija la imagen de fondo al viewport */
+    margin: 0;                                    /* Elimina el margen por defecto */
+    padding: 0;                                   /* Elimina el padding por defecto */
+    color: #fff;                                  /* Color de texto blanco para todo el documento */
+    min-height: 100vh;                            /* Altura mínima de la página igual al alto de la ventana */
+}
+
+header {
+    text-align: center;                           /* Centra el contenido del encabezado */
+    margin-top: 40px;                             /* Espacio superior para el encabezado */
+}
+
+h1 {
+    font-size: 2.5rem;                            /* Tamaño grande para el título principal */
+    margin-bottom: 20px;                          /* Espacio debajo del título */
+    color: #fff;                                  /* Título en blanco */
+    text-shadow: 2px 2px 8px #000;                /* Sombra negra para mejorar la legibilidad */
+}
+
+main {
+    display: flex;                                /* Usa flexbox para el layout principal */
+    justify-content: center;                      /* Centra horizontalmente el contenido */
+    align-items: center;                          /* Centra verticalmente el contenido */
+    min-height: 80vh;                             /* Altura mínima del área principal */
+}
+
+form {
+    background: rgba(0,0,0,0.7);                  /* Fondo negro semitransparente para el formulario */
+    padding: 30px 30px 20px 30px;                 /* Espaciado interno del formulario */
+    border-radius: 10px;                          /* Bordes redondeados */
+    box-shadow: 0 4px 24px rgba(0,0,0,0.3);       /* Sombra para dar profundidad */
+    width: 100%;                                  /* Ocupa todo el ancho disponible */
+    max-width: 500px;                             /* Ancho máximo del formulario */
+}
+
+label {
+    display: block;                               /* Cada etiqueta ocupa una línea completa */
+    margin: 15px 0 5px;                           /* Espaciado arriba y abajo de la etiqueta */
+    color: #fff;                                  /* Texto de la etiqueta en blanco */
+    font-weight: bold;                            /* Texto de la etiqueta en negrita */
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%;                                  /* Campos ocupan todo el ancho disponible */
+    padding: 10px;                                /* Espaciado interno en los campos */
+    margin-bottom: 15px;                          /* Espacio debajo de cada campo */
+    border: 1px solid #ccc;                       /* Borde gris claro */
+    border-radius: 4px;                           /* Bordes redondeados */
+    box-sizing: border-box;                       /* Incluye el padding y borde en el ancho total */
+    background: rgba(255,255,255,0.1);            /* Fondo blanco muy transparente */
+    color: #fff;                                  /* Texto en blanco dentro de los campos */
+    font-size: 1rem;                              /* Tamaño de fuente estándar */
+}
+
+fieldset {
+    border: 1px solid #fff;                       /* Borde blanco para los grupos de opciones */
+    border-radius: 6px;                           /* Bordes redondeados */
+    margin-bottom: 15px;                          /* Espacio debajo de cada grupo */
+    padding: 10px;                                /* Espaciado interno del grupo */
+}
+
+legend {
+    color: #fff;                                  /* Texto del título del grupo en blanco */
+    font-weight: bold;                            /* Título del grupo en negrita */
+    padding: 0 8px;                               /* Espaciado horizontal del título */
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 8px;                            /* Espacio a la derecha del input */
+    accent-color: #5cb85c;                        /* Color de acento verde para los checks y radios */
+}
+
+button[type="submit"] {
+    background-color: #5cb85c;                    /* Fondo verde para el botón */
+    color: white;                                 /* Texto blanco en el botón */
+    padding: 12px 0;                              /* Espaciado interno vertical */
+    border: none;                                 /* Sin borde */
+    border-radius: 4px;                           /* Bordes redondeados */
+    cursor: pointer;                              /* Cursor tipo mano al pasar sobre el botón */
+    width: 100%;                                  /* Botón ocupa todo el ancho disponible */
+    font-size: 1.1rem;                            /* Tamaño de fuente ligeramente mayor */
+    font-weight: bold;                            /* Texto en negrita */
+    margin-top: 10px;                             /* Espacio arriba del botón */
+    transition: background 0.2s;                  /* Transición suave al cambiar el fondo */
+}
+
+button[type="submit"]:hover {
+    background-color: #4cae4c;                    /* Fondo verde más oscuro al pasar el mouse */
+}
+
+textarea {
+    min-height: 80px;                             /* Altura mínima del área de texto */
+    resize: vertical;                             /* Permite redimensionar verticalmente el área de

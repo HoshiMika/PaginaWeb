@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- Indica que el documento es HTML5 -->
+<html lang="es"> <!-- Define el idioma principal de la página como español -->
+<head>
+    <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace la página responsiva en dispositivos móviles -->
+    <title>SoqualST Contacto</title> <!-- Título que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="styles.css"> <!-- Vincula la hoja de estilos CSS externa -->
+    <link rel="icon" href="imagenes/Logo.png" type="image/png"> <!-- Muestra el logo de la empresa en la pestaña del navegador -->
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1> <!-- Título principal del formulario -->
+    </header>
+    <main>
+        <form id="contact-form g-10"> <!-- Formulario de contacto -->
+            <div>
+                <label for="name">Nombre Completo:</label> <!-- Etiqueta para el campo de nombre -->
+                <input type="text" id="name" name="name" placeholder="Coloque su nombre completo" required> <!-- Campo para ingresar el nombre completo -->
+            </div>
+            <div>
+                <label for="phone">Telefono Celular:</label> <!-- Etiqueta para el campo de teléfono -->
+                <input type="tel" id="tel" name="tel" required pattern="[0-9]{10,}" inputmode="numeric" placeholder="Coloque su numero celular" required> <!-- Campo para ingresar el teléfono, solo números -->
+            </div>
+            <div>
+                <label for="email">Correo Electrónico:</label> <!-- Etiqueta para el campo de correo -->
+                <input type="email" id="email" name="email" placeholder="Coloque su correo" required> <!-- Campo para ingresar el correo electrónico -->
+            </div>
+            <div>
+                <label>Seleccione uno o más servicios:</label> <!-- Etiqueta para la selección de servicios -->
+                <fieldset>
+                    <legend>Soporte Técnico</legend> <!-- Título del grupo de soporte técnico -->
+                    <label>
+                        <input type="checkbox" name="servicios[]" value="soporte_hardware"> <!-- Opción de soporte hardware -->
+                        Soporte Hardware
+                    </label>
+                    <label>
+                        <input type="checkbox" name="servicios[]" value="soporte_software"> <!-- Opción de soporte software -->
+                        Soporte Software
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Licencias de aplicativos</legend> <!-- Título del grupo de licencias -->
+                    <label>
+                        <input type="checkbox" name="servicios[]" value="licencia_office"> <!-- Opción licencia Office -->
+                        Licencia Office
+                    </label>
+                    <label>
+                        <input type="checkbox" name="servicios[]" value="licencia_antivirus"> <!-- Opción licencia Antivirus -->
+                        Licencia Antivirus
+                    </label>
+                    <label>
+                        <input type="checkbox" name="servicios[]" value="licencia_adobe"> <!-- Opción licencia Suite Adobe -->
+                        Licencia Suite Adobe
+                    </label>
+                </fieldset>
+            </div>
+            <div>
+                <label for="message">Mensaje:</label> <!-- Etiqueta para el campo de mensaje -->
+                <textarea id="message" name="message" placeholder="Describa brevemente su solicitud" required></textarea> <!-- Campo para ingresar el mensaje -->
+            </div>
+            <div>
+                <label for="opcional">¿Quieres recibir información por medio de:</label>
+                <label>
+                    <input type="radio" name="informacion" value="tel" required>
+                    Telefónico
+                </label>
+                <label>
+                    <input type="radio" name="informacion" value="email">
+                    Correo Electrónico
+                </label>
+        </div>
+            <button type="submit">Enviar</button> <!-- Botón para enviar el formulario -->
+        </form>
+    </main>
+    <script src="scripts/main.js"></script> <!-- Vincula el archivo JavaScript para funcionalidades adicionales --

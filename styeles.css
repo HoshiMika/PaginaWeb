@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif; /* Fuente principal */
+    background-image: url('imagenes/Imagen Pagina Web.jpg'); /* Imagen de fondo */
+    background-repeat: no-repeat; /* No repite la imagen */
+    background-position: center center; /* Centra la imagen */
+    background-size: cover; /* Cubre toda la pantalla */
+    background-attachment: fixed; /* Fija la imagen al viewport */
+    margin: 0;
+    padding: 0;
+    color: #fff; /* Texto blanco */
+    min-height: 100vh;
+}
+
+header {
+    text-align: center; /* Centra el encabezado */
+    margin-top: 40px; /* Espacio superior */
+}
+
+h1 {
+    font-size: 2.5rem; /* Título grande */
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 8px #000; /* Sombra para mejor legibilidad */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 70vh;
+}
+
+ul {
+    background: rgba(0,0,0,0.7); /* Fondo oscuro semitransparente */
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+    list-style-type: none; /* Quita los puntos de la lista principal */
+    color: #fff;
+    font-size: 1.1rem;
+    max-width: 500px;
+}
+
+ul ul {
+    background: none; /* Sublistas sin fondo extra */
+    padding-left: 20px; /* Sangría para sublistas */
+    margin-top: 8px;
+    list-style-type: disc; /* Puntos para sublistas */
+    color: #fff;
+}
+
+li {
+    margin-bottom: 18px; /* Espacio entre servicios */
+}
+
+strong {
+    font-size: 1.2rem;
+    color: #5cb85c; /* Verde para categorías principales */
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 600px) {
+    ul {
+        padding: 15px 10px;
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
